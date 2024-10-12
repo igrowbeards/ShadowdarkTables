@@ -8,9 +8,16 @@ defmodule ShadowdarkTablesTest do
     assert_string(description)
   end
 
-  test "languages" do
-    subject = ShadowdarkTables.rare_language()
-    assert_short_string(subject)
+  describe "languages" do
+    test "rare languages" do
+      subject = ShadowdarkTables.rare_language()
+      assert_short_string(subject)
+    end
+
+    test "common languages" do
+      subject = ShadowdarkTables.common_language()
+      assert_short_string(subject)
+    end
   end
 
   test "dieties" do

@@ -13,4 +13,13 @@ defmodule ShadowdarkTables.Languages do
       ]
     end
   end
+
+  defmodule Common do
+    @moduledoc "common languages are living languages commonly spoken across the realms"
+    use ShadowdarkTables.SimpleTable
+
+    def data do
+      ~w/Dwarvish Elvish Giant Goblin Merran Orcish Reptilian Sylvan Thanian/
+    end
+  end
 end

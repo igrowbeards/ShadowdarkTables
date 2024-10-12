@@ -35,4 +35,6 @@ defmodule ShadowdarkTables do
   def diety, do: Dieties.random()
 
   def rare_language, do: Languages.Rare.random()
+
+  def common_language, do: Languages.Common.random()
 end
