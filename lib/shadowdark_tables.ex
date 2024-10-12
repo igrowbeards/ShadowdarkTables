@@ -3,6 +3,7 @@ defmodule ShadowdarkTables do
   Documentation for `ShadowdarkTables`.
   """
 
+  alias ShadowdarkTables.Alignments
   alias ShadowdarkTables.Backgrounds
   alias ShadowdarkTables.Classes
   alias ShadowdarkTables.Dieties
@@ -37,4 +38,6 @@ defmodule ShadowdarkTables do
   def rare_language, do: Languages.Rare.random()
 
   def common_language, do: Languages.Common.random()
+
+  def alignment, do: Alignments.random()
 end
