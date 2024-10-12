@@ -4,6 +4,7 @@ defmodule ShadowdarkTables do
   """
 
   alias ShadowdarkTables.Alignments
+  alias ShadowdarkTables.Ancestries
   alias ShadowdarkTables.Backgrounds
   alias ShadowdarkTables.Classes
   alias ShadowdarkTables.Dieties
@@ -43,4 +44,6 @@ defmodule ShadowdarkTables do
   def common_language, do: Languages.Common.random()
 
   def alignment, do: Alignments.random()
+
+  def ancestry, do: Ancestries.random()
 end

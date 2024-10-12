@@ -2,6 +2,11 @@ defmodule ShadowdarkTablesTest do
   use ExUnit.Case
   doctest ShadowdarkTables
 
+  test "ancestries" do
+    subject = ShadowdarkTables.ancestry()
+    assert_short_string(subject)
+  end
+
   test "alignments" do
     subject = ShadowdarkTables.alignment()
     assert_short_string(subject)
