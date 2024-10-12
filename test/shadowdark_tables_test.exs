@@ -31,7 +31,7 @@ defmodule ShadowdarkTablesTest do
     fns = [
       &ShadowdarkTables.dwarf_name/0,
       # &ShadowdarkTables.human_name/0,
-      # &ShadowdarkTables.elf_name/0,
+      &ShadowdarkTables.elf_name/0,
       # &ShadowdarkTables.half_orc_name/0,
       # &ShadowdarkTables.goblin_name/0
     ]

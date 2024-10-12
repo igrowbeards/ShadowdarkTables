@@ -18,7 +18,7 @@ defmodule ShadowdarkTables do
 
   def dwarf_name, do: Names.Dwarf.random()
 
-  # def elf_name, do: Enum.random(elf_names())
+  def elf_name, do: Names.Elf.random()
 
   # def human_name, do: Enum.random(human_names())
 

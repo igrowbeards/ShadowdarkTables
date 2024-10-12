@@ -2,12 +2,18 @@ defmodule ShadowdarkTables.Names do
   defmodule Dwarf do
     use ShadowdarkTables.SimpleTable
 
-    def data, do: ~w/Brenna Darvin Elga Alric Isolde Gendry Bruga Junnor Vidrid Torson Brielle Ulfgar Sarna Grimm/
+    def data do
+      ~w/Brenna Darvin Elga Alric Isolde Gendry Bruga Junnor Vidrid Torson Brielle Ulfgar Sarna Grimm/
+    end
   end
 
-  def elf_names,
-    do:
+  defmodule Elf do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
       ~w/Eliara Ryarn Sariel Tirolas Galira Varos Daeniel Axidor Hiralia Cyrwin Lothiel Zaphiel Nayra Ithior Amriel Elyon Jirwyn Natinel Fiora Ruhiel/
+    end
+  end
 
   def human_names,
     do:
