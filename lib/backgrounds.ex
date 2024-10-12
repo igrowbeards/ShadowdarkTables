@@ -1,5 +1,7 @@
 defmodule ShadowdarkTables.Backgrounds do
-  def backgrounds do
+  use ShadowdarkTables.SimpleTable
+
+  def data do
     [
       {"Urchin", "You grew up in the merciless streets of a large city"},
       {"Wanted", "There\'s a price on your head, but you have allies"},
@@ -7,7 +9,7 @@ defmodule ShadowdarkTables.Backgrounds do
       {"Thieve\'s Guild", "You have connections, contacts, and debts"},
       {"Banished", "Your people cast you out for supposed crimes"},
       {"Orphaned", "An unusual guardian rescued and raised you"},
-      {"Wizard\'s Apprentice","Apprentice You have a knack and eye for magic"},
+      {"Wizard\'s Apprentice", "Apprentice You have a knack and eye for magic"},
       {"Jeweler", "You can easily appraise value and authenticity"},
       {"Herbalist", "You know plants, medicines, and poisons"},
       {"Barbarian", "You left the horde, but it never quite left you"},

@@ -1,3 +1,4 @@
 defmodule ShadowdarkTables.Classes do
-  def classes, do: ~w/Fighter Thief Priest Wizard/
+  use ShadowdarkTables.SimpleTable
+  def data, do: ~w/Fighter Thief Priest Wizard/
 end

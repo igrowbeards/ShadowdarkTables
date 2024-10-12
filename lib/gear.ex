@@ -1,5 +1,7 @@
 defmodule ShadowdarkTables.Gear do
-  def gear do
+  use ShadowdarkTables.SimpleTable
+
+  def data do
     [
       "Torch",
       "Dagger",

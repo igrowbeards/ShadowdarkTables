@@ -21,7 +21,7 @@ defmodule ShadowdarkTables.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-     {:mix_test_watch, "~> 1.0", only: [:dev, :test]}
+      {:mix_test_watch, "~> 1.0", only: [:dev, :test]}
     ]
   end
 end

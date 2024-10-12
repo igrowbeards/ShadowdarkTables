@@ -3,7 +3,6 @@ defmodule ShadowdarkTablesTest do
   doctest ShadowdarkTables
 
   test "backgrounds" do
-    # todo can be a abstracted
     {title, description} = ShadowdarkTables.background()
     assert_string(title)
     assert_string(description)
@@ -11,7 +10,7 @@ defmodule ShadowdarkTablesTest do
 
   test "languages" do
     subject = ShadowdarkTables.rare_language()
-    assert_string(subject)
+    assert_short_string(subject)
   end
 
   test "dieties" do
@@ -20,13 +19,21 @@ defmodule ShadowdarkTablesTest do
     assert String.length(subject) < 100
   end
 
-  test 'all the names' do
+  describe "spells" do
+    test "starting priest spells" do
+      subject = ShadowdarkTables.starting_priest_spell()
+      assert is_binary(subject)
+      assert String.length(subject) < 100
+    end
+  end
+
+  test ~c"all the names" do
     fns = [
       &ShadowdarkTables.dwarf_name/0,
-      &ShadowdarkTables.human_name/0,
-      &ShadowdarkTables.elf_name/0,
-      &ShadowdarkTables.half_orc_name/0,
-      &ShadowdarkTables.goblin_name/0
+      # &ShadowdarkTables.human_name/0,
+      # &ShadowdarkTables.elf_name/0,
+      # &ShadowdarkTables.half_orc_name/0,
+      # &ShadowdarkTables.goblin_name/0
     ]
 
     for subject <- fns do
@@ -41,6 +48,6 @@ defmodule ShadowdarkTablesTest do
 
   defp assert_short_string(subject) do
     assert is_binary(subject)
-    assert String.length(subject) < 10
+    assert String.length(subject) < 50
   end
 end

@@ -1,5 +1,7 @@
 defmodule ShadowdarkTables.Dieties do
-  def dieties do
+  use ShadowdarkTables.SimpleTable
+
+  def data do
     [
       # TODO: weighted tables
       "Saint Terragnis",

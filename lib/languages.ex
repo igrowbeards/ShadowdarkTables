@@ -1,10 +1,14 @@
 defmodule ShadowdarkTables.Languages do
-  def rare do
-    [
-      "Celestial",
-      "Diabolic",
-      "Draconic (priest reroll)",
-      "Primordial"
-    ]
+  defmodule Rare do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
+      [
+        "Celestial",
+        "Diabolic",
+        "Draconic (priest reroll)",
+        "Primordial"
+      ]
+    end
   end
 end
