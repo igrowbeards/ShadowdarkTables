@@ -34,8 +34,12 @@ defmodule ShadowdarkTablesTest do
   describe "spells" do
     test "starting priest spells" do
       subject = ShadowdarkTables.starting_priest_spell()
-      assert is_binary(subject)
-      assert String.length(subject) < 100
+      assert_short_string(subject)
+    end
+
+    test "starting wizard spells" do
+      subject = ShadowdarkTables.starting_wizard_spell()
+      assert_short_string(subject)
     end
   end
 

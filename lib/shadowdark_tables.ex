@@ -11,6 +11,7 @@ defmodule ShadowdarkTables do
   alias ShadowdarkTables.Languages
   alias ShadowdarkTables.Names
   alias ShadowdarkTables.Spells.Priest.Starting, as: StartingPriestSpells
+  alias ShadowdarkTables.Spells.Wizard.Starting, as: StartingWizardSpells
 
   @doc ""
   def background, do: Backgrounds.random()
@@ -32,6 +33,8 @@ defmodule ShadowdarkTables do
   def class, do: Classes.random()
 
   def starting_priest_spell, do: StartingPriestSpells.random()
+
+  def starting_wizard_spell, do: StartingWizardSpells.random()
 
   def diety, do: Dieties.random()
 

@@ -17,4 +17,29 @@ defmodule ShadowdarkTables.Spells do
       end
     end
   end
+
+  defmodule Wizard do
+    @moduledoc "Wizards Rule"
+    defmodule Starting do
+      @moduledoc "Spells that one might start with :hmmyes:"
+      use ShadowdarkTables.SimpleTable
+
+      def data do
+        [
+          "Alarm",
+          "Burning hands",
+          "Charm person",
+          "Detect magic",
+          "Feather fall",
+          "Floating disk",
+          "Hold portal",
+          "Light",
+          "Mage armor",
+          "Magic missile",
+          "Protection from evil",
+          "Sleep"
+        ]
+      end
+    end
+  end
 end
