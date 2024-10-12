@@ -4,9 +4,9 @@ defmodule ShadowdarkTables.MixProject do
   def project do
     [
       app: :shadowdark_tables,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.16",
-      build_embedded: Mix.env == :prod,
+      build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: description(),
@@ -28,7 +28,7 @@ defmodule ShadowdarkTables.MixProject do
     [
       {:mix_test_watch, "~> 1.0", only: [:dev, :test]},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
-      {:ex_doc, "~> 0.34", only: :dev, runtime: false},
+      {:ex_doc, "~> 0.34", only: :dev, runtime: false}
     ]
   end
 
