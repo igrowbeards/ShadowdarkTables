@@ -20,19 +20,19 @@ defmodule ShadowdarkTables do
 
   def elf_name, do: Names.Elf.random()
 
-  # def human_name, do: Enum.random(human_names())
+  def human_name, do: Names.Human.random()
 
-  # def half_orc_name, do: Enum.random(half_orc_names())
+  def half_orc_name, do: Names.HalfOrc.random()
 
-  # def goblin_name, do: Enum.random(goblin_names())
+  def goblin_name, do: Names.Goblin.random()
 
-  # def halfling_name, do: Enum.random(halfling_names())
+  def halfling_name, do: Names.Halfling.random()
 
   def class, do: Classes.random()
 
   def starting_priest_spell, do: Spells.Priest.Starting.random()
 
-  def diety, do: Dieties.random() 
+  def diety, do: Dieties.random()
 
   def rare_language, do: Languages.Rare.random()
 end

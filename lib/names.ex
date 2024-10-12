@@ -15,19 +15,35 @@ defmodule ShadowdarkTables.Names do
     end
   end
 
-  def human_names,
-    do:
+  defmodule Human do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
       ~w/Zali Bram Clara Nattias Rina Denton Mirena Aran Morgan Giralt Tamra Oscar Ishana Rogar Jasmin Tarin Yuri Malchor Lienna Godfrey/
+    end
+  end
 
-  def half_orc_names,
-    do:
+  defmodule HalfOrc do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
       ~w/Vara Gralk Ranna Korv Zasha Hrogar Klara Tragan Brolga Drago Yelena Krull Ulara Tulk Shiraal Wulf Ivara Hirok Aja Zoraan/
+    end
+  end
 
-  def goblin_names,
-    do:
+  defmodule Goblin do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
       ~w/Iggs Tark Nix Lenk Roke Fitz Tila Riggs Prim Zeb Borg Yark Deeg Nibs Brak Fink Rizzo Squib Grix/
+    end
+  end
 
-  def halfling_names,
-    do:
+  defmodule Halfling do
+    use ShadowdarkTables.SimpleTable
+
+    def data do
       ~w/Willow Hobb Benny Annie Tucker Marie Cora Gordie Rose Ardo Finn Alma Norbert Jennie Barvin Tilly Pike Lydia Marlow Astrid Jasper/
+    end
+  end
 end

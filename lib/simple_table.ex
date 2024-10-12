@@ -1,5 +1,5 @@
 defmodule ShadowdarkTables.SimpleTable do
-  @behaviour ShadowdarkTables.SimpleTableBehavior 
+  @behaviour ShadowdarkTables.SimpleTableBehavior
   @callback data :: String.t()
 
   defmacro __using__(_) do
