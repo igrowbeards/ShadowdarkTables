@@ -1,4 +1,5 @@
 defmodule ShadowdarkTables.Gear do
+  @moduledoc "The gear dungeon delvers use"
   use ShadowdarkTables.SimpleTable
 
   def data do

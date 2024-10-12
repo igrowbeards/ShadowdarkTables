@@ -1,4 +1,5 @@
 defmodule ShadowdarkTables.Dieties do
+  @moduledoc "The dieties that exist in the world of shadowdark"
   use ShadowdarkTables.SimpleTable
 
   def data do

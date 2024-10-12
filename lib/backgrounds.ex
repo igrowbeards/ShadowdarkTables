@@ -1,4 +1,5 @@
 defmodule ShadowdarkTables.Backgrounds do
+  @moduledoc "A background is a characters history or previous experience"
   use ShadowdarkTables.SimpleTable
 
   def data do

@@ -1,5 +1,7 @@
 defmodule ShadowdarkTables.Names do
+  @moduledoc "random names for shadowdark players or npcs provides functions for each race"
   defmodule Dwarf do
+    @moduledoc false
     use ShadowdarkTables.SimpleTable
 
     def data do
@@ -8,6 +10,7 @@ defmodule ShadowdarkTables.Names do
   end
 
   defmodule Elf do
+    @moduledoc false
     use ShadowdarkTables.SimpleTable
 
     def data do
@@ -16,6 +19,7 @@ defmodule ShadowdarkTables.Names do
   end
 
   defmodule Human do
+    @moduledoc false
     use ShadowdarkTables.SimpleTable
 
     def data do
@@ -24,6 +28,7 @@ defmodule ShadowdarkTables.Names do
   end
 
   defmodule HalfOrc do
+    @moduledoc false
     use ShadowdarkTables.SimpleTable
 
     def data do
@@ -32,6 +37,8 @@ defmodule ShadowdarkTables.Names do
   end
 
   defmodule Goblin do
+    @moduledoc false
+
     use ShadowdarkTables.SimpleTable
 
     def data do
@@ -40,6 +47,8 @@ defmodule ShadowdarkTables.Names do
   end
 
   defmodule Halfling do
+    @moduledoc false
+
     use ShadowdarkTables.SimpleTable
 
     def data do

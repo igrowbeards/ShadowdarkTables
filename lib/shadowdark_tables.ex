@@ -3,13 +3,13 @@ defmodule ShadowdarkTables do
   Documentation for `ShadowdarkTables`.
   """
 
-  alias ShadowdarkTables.Names
-  alias ShadowdarkTables.Spells
-  alias ShadowdarkTables.Dieties
-  alias ShadowdarkTables.Classes
   alias ShadowdarkTables.Backgrounds
+  alias ShadowdarkTables.Classes
+  alias ShadowdarkTables.Dieties
   alias ShadowdarkTables.Gear
   alias ShadowdarkTables.Languages
+  alias ShadowdarkTables.Names
+  alias ShadowdarkTables.Spells.Priest.Starting, as: StartingPriestSpells
 
   @doc ""
   def background, do: Backgrounds.random()
@@ -30,7 +30,7 @@ defmodule ShadowdarkTables do
 
   def class, do: Classes.random()
 
-  def starting_priest_spell, do: Spells.Priest.Starting.random()
+  def starting_priest_spell, do: StartingPriestSpells.random()
 
   def diety, do: Dieties.random()
 
